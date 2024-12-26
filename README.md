@@ -118,3 +118,20 @@ Les principaux objectifs de ce TP étaient :
               driver: bridge
 
    ```
+### Images du Projet
+
+Voici quelques captures d'écran de l'application :
+<div>
+ <img src="https://github.com/user-attachments/assets/f9d0c489-5bc4-4334-82cf-f4fe628fe640" alt="Capture d'écran de l'application React" width="600" />
+ <img src="https://github.com/user-attachments/assets/be6f602c-967c-4e5a-9dd0-7777ee0e953e" alt="Capture d'écran de l'application React" width="600" />
+ <img src="https://github.com/user-attachments/assets/64596989-2275-418e-9797-9ec422ccd1b7" alt="Capture d'écran de l'application React" width="600" />
+</div>
+<div>
+ <img src="https://github.com/user-attachments/assets/4b9bf2e1-667f-4cb9-973b-61a921c4405a" alt="Capture d'écran de l'application React" width="600" />
+ <img src="https://github.com/user-attachments/assets/49c40f30-f590-417a-97e3-4f53b5e9c1ba" alt="Capture d'écran de l'application React" width="600" />
+ <img src="https://github.com/user-attachments/assets/64596989-2275-418e-9797-9ec422ccd1b7" alt="Capture d'écran de l'application React" width="600" />
+ 
+ <img src="https://github.com/user-attachments/assets/177ff685-379e-44f0-ae35-3f41c8f6148e" alt="Capture d'écran de l'application React" width="600" />
+ <img src="https://github.com/user-attachments/assets/0f090d43-18f8-4706-9c7a-f9a7b78c55ad" alt="Capture d'écran de l'application React" width="600" />
+
+</div>
