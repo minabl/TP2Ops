@@ -13,7 +13,9 @@
   - [3. Exécution de MongoDB](#3-exécution-de-mongodb)
   - [4. Exécution des Conteneurs du Serveur et du Client](#4-exécution-des-conteneurs-du-serveur-et-du-client)
   - [5. Création du Fichier Docker Compose](#5-création-du-fichier-docker-compose)
+  - [6. Volume pour MongoDB](#6-volume-pour-mongodb)
 - [Images du Projet](#images-du-projet)
+  
 ## Introduction
 Ce compte rendu documente les étapes et les résultats du TP2 portant sur l'utilisation de Docker et Docker Compose pour containeriser une application MERN . Ce projet vise à renforcer la compréhension des concepts de conteneurisation et d'orchestration des applications.
 
@@ -77,18 +79,18 @@ Les principaux objectifs de ce TP étaient :
         
         CMD ["serve", "-s", "build", "-l", "3000"]
         ```
-   3. Création du Réseau Docker
+   2. Création du Réseau Docker
       Un réseau Docker a été créé pour permettre la communication entre les conteneurs :
         ```
         docker network create mern-network
         ```
-   4. Exécution de MongoDB
+   3. Exécution de MongoDB
       Un conteneur MongoDB a été lancé pour servir de base de données :
       
       ```
         docker run -d --name mongodb --network mern-network mongo
       ```
-   5. Exécution des Conteneurs du Serveur et du Client
+   4. Exécution des Conteneurs du Serveur et du Client
       ```
       - docker run -d --name server --network mern-network -p 5000:5000 mern-server
       - docker run -d --name client --network mern-network -p 3000:3000 mern-client
@@ -96,7 +98,7 @@ Les principaux objectifs de ce TP étaient :
  Ensuite, on procède à la création d’un fichier Docker Compose pour automatiser la gestion des services. Grâce à Docker Compose, on centralise le déploiement, la configuration des connexions entre les 
  conteneurs, et la mise en place d'un environnement cohérent pour l'application.
     
-   6.  Création du Fichier Docker Compose
+   5.  Création du Fichier Docker Compose
       
    ```
           version: "3.8"
@@ -136,7 +138,7 @@ Les principaux objectifs de ce TP étaient :
               driver: bridge
 
    ```
-  7. Volume
+  6. Volume
    
       Dans le fichier Docker Compose, aucune configuration de volume n'est définie pour le service MongoDB. Cela signifie que les données seront stockées dans le système de fichiers temporaire du conteneur. En   
       conséquence, si le conteneur est supprimé, toutes les données seront perdues.
@@ -170,7 +172,9 @@ Les principaux objectifs de ce TP étaient :
        - docker-compose down : arrête et supprime les conteneurs existants
        - docker-compose up --build :  recrée les conteneurs avec la nouvelle configuration
        ```
-          
+      <div>
+         <img src="https://github.com/user-attachments/assets/a1e2b5a1-bd5c-4580-9daa-b6797995e430" alt="Capture d'écran de l'application React" width="300" height="300" />
+      </div>  
      
 ### Images du Projet
 
