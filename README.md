@@ -1,5 +1,20 @@
 # Compte Rendu du TP2 : Docker et Docker Compose
 
+## Table des Matières
+
+- [Introduction](#introduction)
+- [Objectifs](#objectifs)
+- [Structure du Projet](#structure-du-projet)
+- [Étapes Réalisées](#étapes-réalisées)
+  - [1. Création des Dockerfiles](#1-création-des-dockerfiles)
+    - [1.1 Dockerfile pour le Serveur (Express)](#11-dockerfile-pour-le-serveur-express)
+    - [1.2 Dockerfile pour le Client (React)](#12-dockerfile-pour-le-client-react)
+  - [2. Création du Réseau Docker](#2-création-du-réseau-docker)
+  - [3. Exécution de MongoDB](#3-exécution-de-mongodb)
+  - [4. Exécution des Conteneurs du Serveur et du Client](#4-exécution-des-conteneurs-du-serveur-et-du-client)
+  - [5. Création du Fichier Docker Compose](#5-création-du-fichier-docker-compose)
+- [Images du Projet](#images-du-projet)
+
 ## Introduction
 Ce compte rendu documente les étapes et les résultats du TP2 portant sur l'utilisation de Docker et Docker Compose pour containeriser une application MERN . Ce projet vise à renforcer la compréhension des concepts de conteneurisation et d'orchestration des applications.
 
